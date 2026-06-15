@@ -55,8 +55,9 @@ Libraries: Pandas, Scikit-learn, Matplotlib, Seaborn
 Tooling: uv (Environment and dependency management)
 
 
-Repository Structure
+## Repository Structure
 
+```text
 ├── data/                              # EDGAR datasets (raw .xlsx excluded via .gitignore — see below)
 │   └── emissions_data.csv             # Consolidated dataset produced by the pipeline
 ├── src/
@@ -69,6 +70,7 @@ Repository Structure
 ├── pyproject.toml                     # Project metadata & dependencies
 ├── uv.lock                            # Deterministic dependency lockfile
 └── README.md
+```
 
 How To Run This Project
 The raw .xlsx datasets are excluded from version control (large binary files) and distributed via GitHub Releases. 
