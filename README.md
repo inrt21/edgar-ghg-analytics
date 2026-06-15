@@ -74,17 +74,21 @@ Tooling: uv (Environment and dependency management)
 
 How To Run This Project
 The raw .xlsx datasets are excluded from version control (large binary files) and distributed via GitHub Releases. 
-
-#1. Clone the repository
-git clone https://github.com/yourusername/edgar-ghg-analytics.git
-cd edgar-ghg-analytics
-#2. Download the raw datasets from the Releases page and place all three
-#.xlsx files in the data/ directory (see link below)
-#3. Install dependencies and sync the environment
-uv sync
-#4. Run the pipeline
-uv run src/main.py
-
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/yourusername/edgar-ghg-analytics.git](https://github.com/yourusername/edgar-ghg-analytics.git)
+   cd edgar-ghg-analytics
+   ```
+2. **Download the raw datasets:**
+   Download the raw datasets from the Releases page and place all three `.xlsx` files in the `data/` directory.
+3. **Install dependencies and sync the environment:**
+   ```bash
+   uv sync
+   ```
+4. **Run the pipeline:**
+   ```bash
+   uv run src/main.py
+   ```
 Data download: the raw EDGAR datasets are here. 
 [https://github.com/inrt21/edgar-ghg-analytics/releases/download/v1.0.0-data/EDGAR_N2O_m_1970_2024.zip]
 Ensure all three files (IEA_EDGAR_CO2_m_1970_2024.xlsx, EDGAR_CH4_m_1970_2024.xlsx, EDGAR_N2O_m_1970_2024.xlsx) are placed in data/.
