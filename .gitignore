@@ -1,0 +1,19 @@
+# Large Data Assets (GitHub Releases)
+data/*.xlsx
+data/*.zip
+
+# Environments & Dependency Management
+.venv/
+venv/
+ENV/
+
+# Python Artifacts & Cache
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# IDE & System Files
+.DS_Store
+Thumbs.db
